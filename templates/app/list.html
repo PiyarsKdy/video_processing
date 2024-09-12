@@ -12,6 +12,12 @@
   <body>
     <div class="container mt-5">
       <h1 class="text-center">Uploaded Videos</h1>
+
+      <!-- Back Button -->
+      <div class="mb-3">
+        <a href="{% url 'upload_video' %}" class="btn btn-primary">Back</a>
+      </div>
+
       <ul class="list-group">
         {% for video in videos %}
         <li class="list-group-item">

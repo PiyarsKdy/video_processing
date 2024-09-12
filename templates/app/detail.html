@@ -11,6 +11,10 @@
   </head>
   <body>
     <div class="container mt-5">
+      <!-- Back Button -->
+      <div class="mb-3">
+        <a href="{% url 'video_list' %}" class="btn btn-primary">Back</a>
+      </div>
       <h1 class="text-center">{{ video.title }}</h1>
       <video controls>
         <source src="{{ video.video_file.url }}" type="video/mp4" />
